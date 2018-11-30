@@ -2,9 +2,6 @@
 
 namespace LangleyFoxall\EloquentReportGenerator;
 
-use DivineOmega\uxdm\Objects\Exceptions\MissingFieldToMigrateException;
-use DivineOmega\uxdm\Objects\Exceptions\NoDestinationException;
-use DivineOmega\uxdm\Objects\Exceptions\NoSourceException;
 use DivineOmega\uxdm\Objects\Migrator;
 use DivineOmega\uxdm\Objects\Sources\EloquentSource;
 use Exception;
