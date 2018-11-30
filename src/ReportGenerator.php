@@ -115,7 +115,7 @@ class ReportGenerator
                 ->setDestination($this->format->getDestination($filename));
 
             if ($this->fields) {
-                $migrator->setFieldsToMigrate($this->fields)
+                $migrator->setFieldsToMigrate($this->fields);
             };
 
             if ($this->fieldMap) {
