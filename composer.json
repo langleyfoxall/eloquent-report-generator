@@ -1,0 +1,22 @@
+{
+    "name": "langleyfoxall/eloquent-report-generator",
+    "description": "Generates reports from Eloquent models in CSV, PDF, Markdown, HTML, etc.",
+    "type": "library",
+    "license": "LGPL-3.0-only",
+    "authors": [
+        {
+            "name": "Jordan Hall",
+            "email": "jordan@langleyfoxall.co.uk"
+        }
+    ],
+    "require": {
+        "divineomega/uxdm": "^2.6",
+        "illuminate/database": "^5.1",
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LangleyFoxall\\EloquentReportGenerator\\": "src/"
+        }
+    }
+}
