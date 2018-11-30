@@ -94,11 +94,13 @@ class ReportGenerator
      * Save report (triggers report generation).
      *
      * @param $filename
+     * @return ReportGenerator
      * @throws ReportGenerationException
      */
     public function save($filename)
     {
         $this->generate($filename);
+        return $this;
     }
 
     /**
