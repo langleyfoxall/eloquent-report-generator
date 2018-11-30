@@ -13,8 +13,9 @@ trait Reportable
     /**
      * @return ReportGenerator
      */
-    public function generateReport()
+    public static function generateReport()
     {
-        return new ReportGenerator($this);
+        /** @noinspection PhpParamsInspection */
+        return new ReportGenerator(new self);
     }
 }
