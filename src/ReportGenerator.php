@@ -6,7 +6,7 @@ use DivineOmega\uxdm\Objects\Migrator;
 use DivineOmega\uxdm\Objects\Sources\EloquentSource;
 use Exception;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Query\Builder;
+use Illuminate\Database\Eloquent\Builder;
 use LangleyFoxall\EloquentReportGenerator\Exceptions\ReportGenerationException;
 use LangleyFoxall\EloquentReportGenerator\Interfaces\ReportFormatInterface;
 
