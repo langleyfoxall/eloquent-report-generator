@@ -124,6 +124,8 @@ class ReportGenerator
     }
 
     /**
+     * Create and return Eloquent source object, with model and custom query builder.
+     *
      * @return EloquentSource
      */
     private function getSource()
