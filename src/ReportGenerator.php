@@ -109,12 +109,21 @@ class ReportGenerator
     private function generate($filename)
     {
         try {
-            (new Migrator())
+
+            $migrator = (new Migrator())
                 ->setSource($this->getSource())
-                ->setDestination($this->format->getDestination($filename))
-                ->setFieldsToMigrate($this->fields)
-                ->setFieldMap($this->fieldMap)
-                ->migrate();
+                ->setDestination($this->format->getDestination($filename));
+
+            if ($this->fields) {
+                $migrator->setFieldsToMigrate($this->fields)
+            };
+
+            if ($this->fieldMap) {
+                $migrator->setFieldMap($this->fieldMap);
+            }
+
+            $migrator->migrate();
+
         } catch (Exception $e) {
             throw new ReportGenerationException('Error generating report.', 0, $e);
         }
