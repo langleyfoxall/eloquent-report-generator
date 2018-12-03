@@ -16,6 +16,24 @@ does not do this for you.
 
 ## Usage
 
+First, add the `Reportable` trait to the model or models you wish to
+create reports from.
+
+```php
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+use LangleyFoxall\EloquentReportGenerator\Traits\Reportable;
+
+class User extends Model
+{
+    use Reportable;
+    
+    // ...
+```
+
+You can then generate reports elsewhere in your application by calling the static `generateReport` method from this trait.
+
 See the following code snippet for example usage.
 
 ```php
