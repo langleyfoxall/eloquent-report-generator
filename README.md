@@ -1,6 +1,6 @@
 # Eloquent Report Generator
 
-This package can be used to generates reports from Eloquent models 
+This package can be used to generate reports from Eloquent models 
 in many formats, such as CSV, PDF, Markdown, and HTML.
 
 ## Installation
