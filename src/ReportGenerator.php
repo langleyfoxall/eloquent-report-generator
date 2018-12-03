@@ -25,9 +25,9 @@ class ReportGenerator
      */
     private $format;
     /**
-     * @var Builder
+     * @var callable
      */
-    private $query;
+    private $queryCallback;
     /**
      * @var array
      */
@@ -57,12 +57,12 @@ class ReportGenerator
     }
 
     /**
-     * @param Builder $query
+     * @param callable $queryCallback
      * @return $this
      */
-    public function query(Builder $query)
+    public function query(callable $queryCallback)
     {
-        $this->query = $query;
+        $this->queryCallback = $queryCallback;
         return $this;
     }
 
@@ -136,6 +136,6 @@ class ReportGenerator
      */
     private function getSource()
     {
-        return new EloquentSource(get_class($this->model), $this->query);
+        return new EloquentSource(get_class($this->model), $this->queryCallback);
     }
 }
