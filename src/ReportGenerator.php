@@ -29,6 +29,10 @@ class ReportGenerator
      */
     private $queryCallback;
     /**
+     * @var callable
+     */
+    private $dataRowManipulator;
+    /**
      * @var array
      */
     private $fields;
@@ -63,6 +67,16 @@ class ReportGenerator
     public function query(callable $queryCallback)
     {
         $this->queryCallback = $queryCallback;
+        return $this;
+    }
+
+    /**
+     * @param callable dataRowManipulator
+     * @return $this
+     */
+    public function dataRowManipulator(callable $dataRowManipulator)
+    {
+        $this->dataRowManipulator = $dataRowManipulator;
         return $this;
     }
 
@@ -120,6 +134,10 @@ class ReportGenerator
 
             if ($this->fieldMap) {
                 $migrator->setFieldMap($this->fieldMap);
+            }
+
+            if ($this->dataRowManipulator) {
+                $migrator->setDataRowManipulator($this->dataRowManipulator);
             }
 
             $migrator->migrate();
