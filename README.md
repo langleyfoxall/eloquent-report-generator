@@ -19,8 +19,11 @@ does not do this for you.
 See the following code snippet for example usage.
 
 ```php
-// CSV report format
+// Report format
 $format = (new CsvReportFormat());
+//$format = (new PdfReportFormat());
+//$format = (new MarkdownReportFormat());
+//$format = (new HtmlReportFormat());
 
 // Report generation
 User::generateReport()
