@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "049617222d62f827fb35768cc837f6cc",
+    "content-hash": "5a7a41dcd7297ccd4bde97d37ee412e5",
     "packages": [
         {
             "name": "brick/math",
@@ -282,6 +282,61 @@
                 "source": "https://github.com/DivineOmega/uxdm/tree/v4.0.2"
             },
             "time": "2020-06-01T08:34:27+00:00"
+        },
+        {
+            "name": "divineomega/uxdm-eloquent",
+            "version": "v3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DivineOmega/uxdm-eloquent.git",
+                "reference": "6fed3f3ef0a2675bf230bc70b5f0391bb00d674c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DivineOmega/uxdm-eloquent/zipball/6fed3f3ef0a2675bf230bc70b5f0391bb00d674c",
+                "reference": "6fed3f3ef0a2675bf230bc70b5f0391bb00d674c",
+                "shasum": ""
+            },
+            "require": {
+                "divineomega/uxdm": "^3.0.0||^4.0.0",
+                "illuminate/database": "^5.1||^6.0||^7.0||^8.0||^9.0||^10.0",
+                "illuminate/support": "^5.1||^6.0||^7.0||^8.0||^9.0||^10.0"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "ext-sqlite3": "*",
+                "fzaninotto/faker": "^1.6",
+                "php-coveralls/php-coveralls": "^2.0",
+                "phpunit/phpunit": "^7.0||^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DivineOmega\\uxdm\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Jordan Hall",
+                    "email": "jordan@hall05.co.uk"
+                }
+            ],
+            "description": "Eloquent package for the UXDM data migrator",
+            "support": {
+                "issues": "https://github.com/DivineOmega/uxdm-eloquent/issues",
+                "source": "https://github.com/DivineOmega/uxdm-eloquent/tree/v3.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/DivineOmega",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-02-16T08:07:23+00:00"
         },
         {
             "name": "doctrine/inflector",
