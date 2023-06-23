@@ -11,7 +11,7 @@
     ],
     "require": {
         "divineomega/uxdm": "^2.6.1",
-        "illuminate/database": "^5.1",
+        "illuminate/database": "^5.1|^10.0",
         "php": ">=7.0"
     },
     "autoload": {
